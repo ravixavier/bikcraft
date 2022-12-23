@@ -1,23 +1,30 @@
 body {
-  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
+body,
 h1,
 h2,
 h3,
+ul,
 p {
   margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header-bg {
@@ -33,7 +40,7 @@ p {
   box-sizing: border-box;
   padding: 20px;
   max-width: 1200px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
 }
 
 .header-menu {
@@ -98,5 +105,108 @@ p {
 @media (max-width: 475px) {
   .header {
     justify-content: center;
+  }
+}
+
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0px -120px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  margin: 0px auto;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+  font-family: Poppins;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.introducao-conteudo h1 span {
+  color: #ffbb00;
+}
+
+.introducao-conteudo p {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: #332200;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 16px 32px;
+  gap: 10px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.btn:hover {
+  background: linear-gradient(#eba80c, #dd8d16);
+}
+
+@media (max-width: 1200px) {
+  .introducao-conteudo h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background-color: #111111;
+    box-shadow: inset 0px -60px #ffffff;
+  }
+
+  .introducao img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .introducao-conteudo {
+    padding: 40px 0px;
+  }
+  .introducao-conteudo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .introducao-conteudo p {
+    font-size: 1.125rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 28px;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
   }
 }
