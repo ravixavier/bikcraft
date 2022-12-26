@@ -3,7 +3,9 @@
 @import "./global/header.css";
 
 /* utilitário */
-@import "./utilitarios/utilitarios.css";
+@import "./utilitarios/componentes.css";
+@import "./utilitarios/tipografia.css";
+@import "./utilitarios/cores.css";
 
 /* home */
 @import "./home/introducao.css";
