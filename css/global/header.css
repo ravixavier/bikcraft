@@ -8,10 +8,6 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0px auto;
 }
 
 .header-menu {
@@ -19,6 +15,7 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  padding: 20px;
 }
 
 .header-menu a {
