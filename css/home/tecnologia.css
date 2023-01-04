@@ -1,0 +1,34 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0px 70px 0px var(--cor-0), inset 0px -70px 0px var(--cor-0);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-content {
+  align-self: center;
+}
+
+.tecnologia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+/* .tecnologia-content span,
+p {
+  margin-bottom: 20px;
+}
+
+.tecnologia-content h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-content a {
+  margin-bottom: 80px;
+} */
