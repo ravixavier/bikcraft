@@ -17,8 +17,17 @@
   text-transform: uppercase;
 }
 
+.btn.var2 {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
 .btn:hover {
   background: linear-gradient(#eba80c, #dd8d16);
+}
+
+.btn.var2:hover {
+  background: var(--cor-9);
 }
 
 @media (max-width: 800px) {
