@@ -1,7 +1,3 @@
-.titulo p {
-  margin-bottom: 8px;
-}
-
 .termos {
   display: grid;
   grid-template-columns: 1fr;
@@ -21,16 +17,4 @@
 .termos-items p {
   max-width: 78ch;
   margin-bottom: 24px;
-}
-
-@media (max-width: 800px) {
-  .titulo-bg {
-    padding: 32px 20px;
-  }
-
-  .titulo p {
-    text-transform: lowercase;
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
 }
