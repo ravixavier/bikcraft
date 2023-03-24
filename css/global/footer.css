@@ -5,9 +5,8 @@
 .footer {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
-  gap: 4px;
-  padding-top: 60px;
-  padding-bottom: 32px;
+  gap: 40px;
+  padding: 60px 20px;
 }
 
 .footer h3 {
@@ -27,7 +26,7 @@
   margin-top: 16px;
 }
 
-.footer-contato li {
+.footer li {
   margin-bottom: 16px;
 }
 
