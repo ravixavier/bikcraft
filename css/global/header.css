@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .header-menu a {
@@ -29,12 +29,14 @@
   display: block;
   height: 2px;
   width: 0px;
+  margin-top: 4px;
   background: var(--cor-p2);
   transition: 0.3s;
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
