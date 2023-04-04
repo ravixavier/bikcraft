@@ -20,9 +20,29 @@
 }
 
 .seguro h2 {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .seguro p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .seguro {
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+
+  .seguro-conteudo {
+    padding: 0px 0px;
+    grid-row: 1;
+  }
+
+  .seguro-bg {
+  box-shadow: inset 0px -80px var(--cor-12);
+  }
+
+  .bicicleta-lista ul {
+    flex-flow: column;
+  }
 }
